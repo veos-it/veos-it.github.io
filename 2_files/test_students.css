@@ -1,0 +1,96 @@
+.success {
+  color: #5cb85c;
+}
+.test-content {
+  width: 100%;
+  margin: 0 auto;
+}
+.test-content .error-container {
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  background-color: #f2dede;
+  color: #a94442;
+}
+.test-content .error-container a {
+  display: inline-block;
+  margin-top: 5px;
+  margin-left: 10px;
+  font-size: .9em;
+  color: #a94442;
+  text-decoration: none;
+}
+.test-content .error-container a:before {
+  content: "\2022";
+  margin-right: 5px;
+}
+.test-content .user-information {
+  margin-top: 30px;
+}
+.test-content .user-information div {
+  margin: 10px;
+}
+.test-content .user-information div label {
+  width: 15em;
+}
+.test-content .user-information div input {
+  width: 20em;
+}
+.test-content .user-information div input.error {
+  border-color: #a94442;
+}
+.test-content .user-information div label.error {
+  width: auto;
+  font-size: .8em;
+  color: #a94442;
+  margin-left: 15px;
+}
+.test-content .hint {
+  font-size: .8em;
+}
+i.required-mark:before {
+  content: "*";
+  color: #a94442;
+}
+#question-container {
+  margin: 20px;
+}
+#question-container header {
+  padding: 10px;
+}
+#question-container main {
+  margin: 30px 20px;
+}
+#question-container .controls {
+  margin-top: 30px;
+}
+#results-container h1 {
+  font-size: 1.6em;
+  margin-bottom: 30px;
+}
+#results-container p {
+  margin: 10px 5px;
+}
+#results-container section.answers {
+  margin: 40px 0;
+}
+#results-container section.answers h2 {
+  font-size: 1.3em;
+}
+#results-container section.answers .question {
+  margin: 20px 0;
+}
+#results-container section.answers .question header {
+  padding: 0;
+  margin-bottom: 10px;
+}
+#results-container section.answers .question main {
+  margin-left: 20px;
+}
+#results-container section.answers .question main i.success {
+  margin-left: 5px;
+}
+.hidden {
+  display: none;
+}

@@ -1,0 +1,34 @@
+$(document).ready(function() {
+	$('[data-action=search]').click(function() {
+		$(this).parents('form.search').trigger('submit');
+
+		return false;
+	});
+	
+	$('#search_main').submit(function(){
+		var $input = $('input[name=text]');
+		if ($input.val() == $input.data('pattern')) {
+			$input.val('');
+		}
+	});
+
+	/*Блок поиска*/
+	$('.prev, .next').click(function() {
+		var replace = '';
+		var search_part = '';
+		switch ($('input[name=text]').attr('placeholder')) {
+			case 'Поиск по порталу':
+				replace = "Поиск в документах";
+				search_part = "base";
+				break;
+			case 'Поиск в документах':
+				replace = "Поиск по порталу";
+				search_part = "edu";
+				break;
+		}
+		$('input[name=text]').attr('placeholder', replace);
+		$('#search_part').val(search_part);
+
+		return false;
+	});
+})
